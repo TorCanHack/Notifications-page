@@ -19,6 +19,7 @@ markAll.addEventListener("click", () => {
   // Loop through the notifications and remove the unread class
   notifications.forEach(notification => {
     notification.classList.remove("unread");
+    notification.querySelector(".fa-solid.fa-circle.icon").classList.toggle("fa-circle");
   });
   // Update the unread count
   updateUnreadCount();
